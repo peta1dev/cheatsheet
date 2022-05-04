@@ -1,13 +1,12 @@
 body {
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
- color: darkslateblue;
- line-height: 1.5rem;
+    color: darkslateblue;
+    line-height: 1.5rem;
 }
 
 code {
     font-family: consolas, 'Courier New', monospace;
-    color:darkslateblue;
     background-color:lightcyan;
 }
 
