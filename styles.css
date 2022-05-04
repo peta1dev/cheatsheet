@@ -24,7 +24,6 @@ th {
 
 code {
     font-family: consolas, 'Courier New', monospace;
-
     color:darkslateblue;
     background-color:lightcyan;
 }
@@ -32,9 +31,9 @@ code {
 td {
     padding: 5px;
     vertical-align: text-top;
-    border-bottom: 1px solid peru;
-    
+    border-bottom: 1px solid peru;    
 }
+
 caption {
     margin: auto;
     margin-bottom: 1em;
