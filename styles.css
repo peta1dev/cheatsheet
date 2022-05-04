@@ -1,0 +1,73 @@
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+ color: darkslateblue;
+ line-height: 1.5rem;
+}
+
+table {
+    border: 1px solid peru;
+    border-top-left-radius: 20px;
+    width: 90%;
+    margin:auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+th {
+    border-bottom: 1px solid peru;
+    background-color: blanchedalmond;
+    vertical-align: text-top;
+    text-align: left;
+    padding: 0 1em 0 1em;
+}
+code {
+    font-family: consolas, 'Courier New', monospace;
+
+    color:darkslateblue;
+    background-color:lightcyan;
+}
+
+td {
+    padding: 5px;
+    vertical-align: text-top;
+    border-bottom: 1px solid peru;
+    
+}
+caption {
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    border-top: 1px solid peru;
+    border-left: 1px solid peru;
+    border-right: 1px solid peru;
+    border-top-left-radius: 20px;
+    
+    width: fit-content;
+}
+
+h1 {
+    background-color: blanchedalmond;
+    border-top: solid 1px peru;
+    border-bottom: solid 1px peru;
+    padding: 0.5em 0 0.5em 0;
+    line-height: 1.3em;
+}
+
+h2 {
+    border-top: solid 1px peru;
+    border-bottom: solid 1px peru;
+    background-color: linen;
+    width:fit-content; 
+    
+}
+
+p {
+    max-width: 600px;
+    padding-left: 1em;
+}
+
+td p {
+    padding-left: 0em;
+}

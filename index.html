@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>HTML Positioning Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>HTML Positioning Cheatsheet</h1>
+    </header>
+    <main>
+        <section>
+            <h2><code>position</code> Property</h2>
+            <p>The <code>position</code> property is used for positioning elements
+                on a page. Elements can be positioned by comparison to other sibling or parent elements in the document,
+                or set against the viewport boundaries.</p>
+            <p>Other offset positioning properties such as <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code>, and <code>z-index</code> can be set from the starting location specified by the
+                <code>position</code> property.
+            </p>
+            <table>
+                <caption><code>position</code> Property - Commonly Used Values</caption>
+                <thead>
+
+                    <tr>
+                        <th>Value</th>
+                        <th>Starting position before offset properties applied</th>
+                        <th>Can use offset positioning properties?</th>
+                        <th>Creates its own space in the document flow?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>fixed</code></td>
+                        <td>Top left of viewport.</td>
+                        <td>Yes</td>
+                        <td>No - a fixed element does not scroll with other page elements.</td>
+                    </tr>
+                    <tr>
+                        <td><code>static</code></td>
+                        <td>Normal position in document flow.</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>absolute</code></td>
+                        <td>Relative to closest positioned ancestor, if any; otherwise, placed relative to the initial
+                            containing block.</td>
+                        <td>Yes</td>
+                        <td>No - and margins do not collapse.</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>relative</code></td>
+                        <td>Normal document flow position.</td>
+                        <td>Yes</td>
+                        <td>Original document flow space created for the element remains but offset position does not
+                            create new space.</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>sticky</code></td>
+                        <td>Normal document flow position.</td>
+                        <td>Yes - offset relative to nearest scrolling ancestor and containing block.</td>
+                        <td>
+                            <p>Original document flow space created for the element remains but offset position does not
+                                create new space.</p>
+                            <p>The element will scroll with the ancestor or containing block to the boundary of the
+                                viewport and then will stay at the boundary until the containing block scrolls off the
+                                viewport edge. The element will remain offset from the boundary with the same values
+                                that it was offset from the container element edge.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2><code>display</code> Property</h2>
+
+
+
+            <p>The <code>display</code> property sets the way the element will be laid out in the flow
+                of the elements, whether it will allow other elements to display beside it and whether it will be bound
+                by width and height attributes.</p>
+            <table>
+                <caption><code>display</code> Property - Commonly Used Values</caption>
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Horizontal positioning behavior</th>
+                        <th>Will heed height and width properties?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><code>inline</code></td>
+                        <td>Allows other elements beside it in a row.</td>
+                        <td>No (takes up minimal space).</td>
+                    </tr>
+                    <tr>
+                        <td><code>block</code></td>
+                        <td>Sits alone in a row.</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>inline-block</code></td>
+                        <td>Allows other elements beside it in a row.</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
