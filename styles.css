@@ -21,6 +21,7 @@ th {
     text-align: left;
     padding: 0 1em 0 1em;
 }
+
 code {
     font-family: consolas, 'Courier New', monospace;
 
@@ -41,8 +42,7 @@ caption {
     border-top: 1px solid peru;
     border-left: 1px solid peru;
     border-right: 1px solid peru;
-    border-top-left-radius: 20px;
-    
+    border-top-left-radius: 20px; 
     width: fit-content;
 }
 
